@@ -1,0 +1,6 @@
+<% @timeline.each do |status| %>
+	<tr>
+		<td><%=status[:text].html_safe%></td>
+		<td><%=status[:created_at]%></td>
+	</tr>
+<% end %>

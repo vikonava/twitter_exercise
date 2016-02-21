@@ -1,0 +1,21 @@
+<h1>Main#index</h1>
+<% if user_signed_in? %>
+<p>
+Get a User Twitter's feed<br/>
+<b>Screen Name:</b> <input type="text" placeholder="username" autocomplete="off" id="screen_name"/>
+<br/>
+<input type="button" value="Get Timeline" onClick="getTimeline()" />
+</p>
+<table>
+	<thead>
+		<tr>
+			<th>Text</th>
+			<th>Date</th>
+		</td>
+	</thead>
+	<tbody id="result">
+	</tbody>
+</table>
+<% else %>
+	<p>You need to <%= link_to "Log In", new_user_session_path %> or <%= link_to "Register", new_user_registration_path %> in order to continue<p>
+<% end %>
