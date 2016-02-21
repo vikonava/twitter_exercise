@@ -1,0 +1,10 @@
+{
+	"twitter": {
+		"host": "api.twitter.com",
+		"version": "1.1",
+		"app_key": "GDJHGDGyu8789hdHK899",
+		"secret": "hjdsgjhg7786adkjghgdSDDUGHg8GDdh988y",
+		"max_count": 25
+	},
+	"cache": 5
+}

@@ -4,12 +4,12 @@ This application was developed as an exercise using Ruby 2.3.0 with Rails 4.2.5
 
 ### Gems Used
 * Testing
-..* Rspec-rails
-..* FactoryGirl
-..* Capybara
-..* Selenium-webdriver
+⋅⋅* Rspec-rails
+⋅⋅* FactoryGirl
+⋅⋅* Capybara
+⋅⋅* Selenium-webdriver
 * Development/Production
-..* Devise
+⋅⋅* Devise
 
 ### App Design Choices
 
@@ -49,37 +49,18 @@ Most of the keys are self-explanatory where you have to specify the twitter host
 
 ### Heroku Deployment instructions
 
-
+1. Configure Database in Gemfile to be **pg** and comment out the **sqlite3** gem.
+2. Modify the config/database.yml file to configure postgresql
+3. Run **heroku create** command
+4. Push your code to Heroku using git
+5. If its the first time deploying, be sure to run migrations or reset in Heroku. If its the first time just run **heroku run rake db:reset** command
+6. You can run **heroku open** to get a browser open the website for you
 
 ### Test Suite Setup/Execution Instructions
 
 1. Run **bundle install** if not done already
 2. Run **rspec spec** to run the test suite
 
+### Heroku Deployment Test
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This app has been deployed to https://gentle-citadel-96093.herokuapp.com for testing purposes
